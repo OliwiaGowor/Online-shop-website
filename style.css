@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #323232;
+} 
+ 
+.page-nav {
+ 
+}
+ 
+.page-nav .page-nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.page-nav .page-nav-container .page-nav-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 59px;
+    background-color: #323232;
+}
+
+.page-nav .page-nav-container .page-nav-upper .nav-space-first {
+    
+}
+
+.page-nav .page-nav-container .page-nav-upper .search-bar .search-bar-input {
+    width: calc(300px - 18px);
+    height: 29px;
+    border-radius: 15px;
+    border: none;
+    background-color: #999999;
+    padding-left: 18px;
+}
+
+.page-nav .page-nav-container .page-nav-upper .nav-space-second {
+    
+    min-width: 70px;
+    flex-shrink: 1;
+}
+
+.page-nav .page-nav-container .page-nav-upper .right-icons .right-icons-elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.page-nav .page-nav-container .page-nav-upper .right-icons .right-icons-elements li {
+    padding: 0 12px;
+}
+
+.page-nav .page-nav-container .page-nav-lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #999999;
+    width: 100%;
+    height: 42px;
+}
+
+.page-nav .page-nav-container .page-nav-lower .tabs .tabs-elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.page-nav .page-nav-container .page-nav-lower .tabs .tabs-elements li {
+    padding: 0 24px;
+}
+
+.page-nav .page-nav-container .page-nav-lower .settings .settings-elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+    margin: 0;
+}
+
+.home .home-container .background-photo {
+    position: relative;
+    top: 100px;
+    background: url(photos/background-photo.jpg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 900px;
+}
+
+.home .home-container .home-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    top: 200px;
+    width: 40%;
+    padding-left: 15%;
+}
+
+.qualities .qualities-container .qualities-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.qualities .qualities-container .qualities-elements li {
+    width: 300px;
+    border-radius: 15px;
+    color: white;
+}
