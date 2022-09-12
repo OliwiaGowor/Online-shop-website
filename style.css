@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: #323232;
+    background-color: #999999;
+    font-family: 'Roboto', sans-serif;
 } 
  
 .page-nav {
@@ -12,20 +13,31 @@ body {
     top: 0;
     width: 100%;
     z-index: 99;
+    margin: 0;
 }
 
 .page-nav .page-nav-container .page-nav-upper {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: repeat(1, 59px);
+    grid-template-columns: repeat(3, 640px);
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
     width: 100%;
     height: 59px;
     background-color: #323232;
 }
 
+.page-nav .page-nav-container .page-nav-upper .page-logo {
+    padding-left: 80px;
+    justify-self: start;
+}
+
 .page-nav .page-nav-container .page-nav-upper .nav-space-first {
     
+}
+
+.page-nav .page-nav-container .page-nav-upper .search-bar {
+    justify-self: center;
 }
 
 .page-nav .page-nav-container .page-nav-upper .search-bar .search-bar-input {
@@ -37,10 +49,13 @@ body {
     padding-left: 18px;
 }
 
-.page-nav .page-nav-container .page-nav-upper .nav-space-second {
-    
+.page-nav .page-nav-container .page-nav-upper .nav-space-second {  
     min-width: 70px;
     flex-shrink: 1;
+}
+
+.page-nav .page-nav-container .page-nav-upper .right-icons {
+    justify-self: end;
 }
 
 .page-nav .page-nav-container .page-nav-upper .right-icons .right-icons-elements {
@@ -83,13 +98,17 @@ body {
     margin: 0;
 }
 
+.home .home-container {
+    height: calc(890px + 59px + 42px);
+}
+
 .home .home-container .background-photo {
     position: relative;
     top: 100px;
     background: url(photos/background-photo.jpg) no-repeat;
-    background-size: contain;
+    background-size: 100% 890px;
     width: 100%;
-    height: 900px;
+    height: 890px;
 }
 
 .home .home-container .home-content {
@@ -101,6 +120,10 @@ body {
     top: 200px;
     width: 40%;
     padding-left: 15%;
+}
+
+.qualities .qualities-container {
+
 }
 
 .qualities .qualities-container .qualities-elements {
@@ -115,4 +138,84 @@ body {
     width: 300px;
     border-radius: 15px;
     color: white;
+}
+
+.categories .categories-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.categories .categories-container .categories-elements {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.categories .categories-container .categories-elements .categories-element {
+    display: flex;
+    width: auto;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories .categories-container .categories-elements .categories-element .category-name {
+    position: absolute;
+}
+
+.new-products .new-products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-products .new-products-container .new-products-elements {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 0;
+}
+
+.new-products .new-products-container .new-products-elements .new-products-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 12px 30px ;
+    border: 1px solid black;
+}
+
+.new-products .new-products-container .new-products-elements .new-products-element .wishlist-icon {
+    position: relative;
+    left: 125px;
+    bottom: 295px;
+}
+
+.new-products .new-products-container .new-products-elements .new-products-element .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.new-products .new-products-container .new-products-elements .new-products-element .product-details .price-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.new-products .new-products-container .new-products-elements .new-products-element .price-tag .product-price {
+
 }
