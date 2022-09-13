@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: #999999;
     font-family: 'Roboto', sans-serif;
 } 
@@ -47,6 +48,12 @@ body {
     border: none;
     background-color: #999999;
     padding-left: 18px;
+}
+
+.page-nav .page-nav-container .page-nav-upper .search-bar .search-icon {
+    position: relative;
+    right: 38px;
+    top: 4px;
 }
 
 .page-nav .page-nav-container .page-nav-upper .nav-space-second {  
@@ -122,6 +129,21 @@ body {
     padding-left: 15%;
 }
 
+.home .home-container .home-content .home-header {
+    font-size: 68px;
+}
+
+.home .home-container .home-content .home-text {
+    font-size: 20px;
+}
+
+.home .home-container .home-content .button-shop-now {
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: none;
+}
+
 .qualities .qualities-container {
 
 }
@@ -195,10 +217,10 @@ body {
     border: 1px solid black;
 }
 
-.new-products .new-products-container .new-products-elements .new-products-element .wishlist-icon {
+.new-products .new-products-container .new-products-elements .new-products-element .wishlist {
     position: relative;
-    left: 125px;
-    bottom: 295px;
+    left: 100px;
+    bottom: 242px;
 }
 
 .new-products .new-products-container .new-products-elements .new-products-element .product-details {
@@ -209,6 +231,11 @@ body {
     width: 100%;
 }
 
+.new-products .new-products-container .new-products-elements .new-products-element .product-details .product-name {
+    font-size: 22px;
+    margin: 0;
+}
+
 .new-products .new-products-container .new-products-elements .new-products-element .product-details .price-tag {
     display: flex;
     flex-direction: row;
@@ -217,5 +244,53 @@ body {
 }
 
 .new-products .new-products-container .new-products-elements .new-products-element .price-tag .product-price {
+
+}
+
+.footer-container {
+    background-color: #323232;
+    color: white;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container .newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .newsletter .newsletter-text .newsletter-header {
+    font-size: 34px;
+}
+
+.footer-container .hyperlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-container .hyperlinks h1 {
+    font-size: 18px;
+}
+
+.footer-container .hyperlinks .informations .informations-elements {
+
+}
+
+.footer-container .hyperlinks .contact .contact-elements {
+
+}
+
+.footer-container .hyperlinks .users-account .account-elements {
 
 }
