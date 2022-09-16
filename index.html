@@ -13,7 +13,7 @@
         <div class="page-nav">
             <div class="page-nav-container">
                 <div class="page-nav-upper">
-                    <div class="page-logo">LOGO</div>
+                    <div class="page-logo"><a href="">LOGO</a></div>
                     <div class="search-bar">
                         <input type="text" class="search-bar-input" placeholder="Search...">
                         <img class="search-icon" src="icons/search-icon.png" width="20px" height="20px">
@@ -29,12 +29,13 @@
                 <div class="page-nav-lower">
                     <div class="tabs">
                         <ul class="tabs-elements">
-                            <li>Home</li>
-                            <li>Shop</li>
-                            <li>About us</li>
-                            <li>Contact us</li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Contact us</a></li>
                         </ul>
                     </div>
+                    <span class="nav-lower-space"></span>
                     <div class="settings">
                         <ul class="settings-elements">
                             <li>PLN</li>
@@ -50,29 +51,33 @@
         <div class="home">
             <div class="home-container">
                 <div class="background-photo"></div>
+                <div class="swipe-dots">
+                    <span class="swipe-dot"></span> <span class="swipe-dot"></span> <span class="swipe-dot"></span>
+                </div>
                 <div class="home-content">
                     <h1 class="home-header">Lorem Ipsum</h1>
                     <p class="home-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, aperiam. 
                         Nam ratione ea sunt mollitia, non veniam porro voluptate eligendi consequuntur, 
                         id asperiores inventore voluptates. Possimus, dolore? Esse, natus minima?</p>
                         <button class="button-shop-now">Shop now</button>
+
                 </div>
         </div>
         <div class="qualities">
             <div class="qualities-container">
                 <ul class="qualities-elements">
                     <li>
-                        <img class="qualities-icon" src="icons/delivery-box.png" width="150px" height="75px">
+                        <div class="qualities-icon-container"><img class="qualities-icon" src="icons/truck-side.png" width="50px" height="50px"></div>
                         <h2 class="qualities-header">Shipping</h2>
                         <p class="qualities-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </li>
                     <li>
-                        <img class="qualities-icon" src="icons/wallet.png" width="100px" height="100px">
+                        <div class="qualities-icon-container"><img class="qualities-icon" src="icons/piggy-bank.png" width="50px" height="50px"></div>
                         <h2 class="qualities-header">Safe payments</h2>
                         <p class="qualities-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </li>
                     <li>
-                        <img class="qualities-icon" src="icons/live-chat.png" width="100px" height="100px">
+                        <div class="qualities-icon-container"><img class="qualities-icon" src="icons/headset.png" width="50px" height="50px"></div>
                         <h2 class="qualities-header">Service</h2>
                         <p class="qualities-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </li>
@@ -81,22 +86,31 @@
         </div>
         <div class="categories">
             <div class="categories-container">
+                <h1 class="categories-header">Categories</h1>
                 <ul class="categories-elements">
                     <li class="categories-element">
-                        <img class="category-photo" src="photos/galen-crout-EzKs1M-xcxY-unsplash.jpg" width="300px" height="300px">
-                        <h2 class="category-name">Category</h2> 
+                        <a href="">
+                            <img class="category-photo" src="photos/galen-crout-EzKs1M-xcxY-unsplash.jpg" width="300px" height="300px">
+                            <h2 class="category-name">CATEGORY</h2> 
+                        </a>
                     </li>
                     <li class="categories-element">
-                        <img class="category-photo" src="photos/pakata-goh-RDolnHtjVCY-unsplash.jpg" width="300px" height="300px">
-                        <h2 class="category-name">Category</h2>  
+                        <a href="">
+                            <img class="category-photo" src="photos/pakata-goh-RDolnHtjVCY-unsplash.jpg" width="300px" height="300px">
+                            <h2 class="category-name">CATEGORY</h2>  
+                        </a>
                     </li>
                     <li class="categories-element">
-                        <img class="category-photo" src="photos/rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg" width="300px" height="300px">
-                        <h2 class="category-name">Category</h2>
+                        <a href="">
+                            <img class="category-photo" src="photos/rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg" width="300px" height="300px">
+                            <h2 class="category-name">CATEGORY</h2>
+                        </a>
                     </li>
                     <li class="categories-element">
-                        <img class="category-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px">
-                        <h2 class="category-name">Category</h2>  
+                        <a href="">
+                            <img class="category-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px">
+                            <h2 class="category-name">CATEGORY</h2>  
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -156,16 +170,6 @@
  
     <footer>
         <div class="footer-container">
-            <div class="newsletter">
-                <div class="newsletter-text">
-                    <h1 class="newsletter-header">Sign up for the Newsletter!</h1>
-                    <p class="newsletter-desciption">Subscribe to our newsletter be up-to-date with newest sales and get exclusive member deals!</p>
-                </div>
-                <div class="newsletter-input">
-                    <input type="email" class="email-input" placeholder="Enter your e-mail">
-                    <button class="subscribe-button">Subscribe!</button>
-                </div>
-            </div>
             <div class="hyperlinks">
                 <div class="informations">
                     <h1 class="informations-header">Informations</h1>
@@ -174,15 +178,6 @@
                         <li class="informations-element"><a href="">Lorem ipsum</a></li>
                         <li class="informations-element"><a href="">Lorem ipsum</a></li>
                         <li class="informations-element"><a href="">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="contact">
-                    <h1 class="contact-header">Contact us</h1>
-                    <ul class="contact-elements">
-                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
-                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
-                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
-                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
                     </ul>
                 </div>
                 <div class="users-account">
@@ -194,7 +189,27 @@
                         <li class="account-element"><a href="">Lorem ipsum</a></li>
                     </ul>
                 </div>
+                <div class="contact">
+                    <h1 class="contact-header">Contact us</h1>
+                    <ul class="contact-elements">
+                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
+                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
+                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
+                        <li class="contact-element"><a href="">Lorem ipsum</a></li>
+                    </ul>
+                </div>
             </div>
+                <div class="newsletter">
+                    <div class="newsletter-text">
+                        <h1 class="newsletter-header">Sign up for the Newsletter!</h1>
+                        <p class="newsletter-description">Subscribe to our newsletter be up-to-date with newest sales and get exclusive member deals!</p>
+                    </div>
+                    <form class="newsletter-input">
+                        <input type="email" class="email-input" placeholder="Enter your e-mail">
+                        <button class="subscribe-button">Subscribe!</button>
+                    </form>
+                </div>
+            
         </div>
     </footer>
 </body>
