@@ -18,11 +18,19 @@
                         <input type="text" class="search-bar-input" placeholder="Search...">
                         <img class="search-icon" src="icons/search-icon.png" width="20px" height="20px">
                     </div>
+                    <span class="nav-upper-space"></span>
                     <div class="right-icons">
                         <ul class="right-icons-elements">
-                            <li><img class="account-icon" src="icons/account-icon.png" width="25px" height="25px"></li>
-                            <li><img class="wishlist-icon" src="icons/wishlist-icon.png" width="25px" height="25px"></li>
-                            <li><img class="shopping-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></li>
+                            <li><a href=""><img class="account-icon" src="icons/account-icon.png" width="25px" height="25px"></a></li>
+                            <li><a href=""><img class="wishlist-icon" src="icons/wishlist-icon.png" width="25px" height="25px"></a></li>
+                            <li> 
+                                <div class="shopping-cart-box">
+                                    <a href=""><img class="shopping-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></a>
+                                    <div class="shopping-cart-dropdown">
+                                        <h2 class="cart-header">Koszyk</h2>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -38,8 +46,28 @@
                     <span class="nav-lower-space"></span>
                     <div class="settings">
                         <ul class="settings-elements">
-                            <li>PLN</li>
-                            <li>PL</li>
+                            <li class="languages">
+                                <p>PL</p>
+                                <div class="dropdown-arrow">
+                                    <span></span><span></span>
+                                </div>
+                                <div class="languages-dropdown">
+                                    <ul>
+                                        <li>ENG</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="currency">
+                                <p>PLN</p>
+                                <div class="dropdown-arrow">
+                                    <span></span><span></span>
+                                </div>
+                                <div class="currency-dropdown">
+                                    <ul>
+                                        <li>EUR</li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -120,45 +148,44 @@
                 <h1 class="new-products-header">New products</h1>
                 <ul class="new-products-elements">
                     <li class="new-products-element">
-                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="250px" height="250px"></a>
+                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px"></a>
                         <a class="wishlist"><img class="wishlist-icon" src="icons/heart.png" width="25px" height="25px"></a>
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <a><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></a>
+                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
                                 <p class="product-price">100.00</p>
                             </div>
                         </div>
                     </li>
                     <li class="new-products-element">
-                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="250px" height="250px"></a>
+                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px"></a>
                         <a class="wishlist"><img class="wishlist-icon" src="icons/heart.png" width="25px" height="25px"></a>
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <a><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></a>
+                                <p class="product-price">100.00</p><p class="currency">zł</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="new-products-element">
+                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px"></a>
+                        <a class="wishlist"><img class="wishlist-icon" src="icons/heart.png" width="25px" height="25px"></a>
+                        <div class="product-details">
+                            <h2 class="product-name">Lorem Ipsum</h2>
+                            <div class="price-tag">
+                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
                                 <p class="product-price">100.00</p>
                             </div>
                         </div>
                     </li>
                     <li class="new-products-element">
-                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="250px" height="250px"></a>
+                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="300px" height="300px"></a>
                         <a class="wishlist"><img class="wishlist-icon" src="icons/heart.png" width="25px" height="25px"></a>
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <a><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></a>
-                                <p class="product-price">100.00</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="new-products-element">
-                        <a><img class="product-photo" src="photos/michael-soledad-BKHHHJ1PD4g-unsplash.jpg" width="250px" height="250px"></a>
-                        <a class="wishlist"><img class="wishlist-icon" src="icons/heart.png" width="25px" height="25px"></a>
-                        <div class="product-details">
-                            <h2 class="product-name">Lorem Ipsum</h2>
-                            <div class="price-tag">
-                                <a><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="25px" height="25px"></a>
+                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
                                 <p class="product-price">100.00</p>
                             </div>
                         </div>
@@ -212,5 +239,6 @@
             
         </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>
