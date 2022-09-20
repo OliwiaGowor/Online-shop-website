@@ -78,9 +78,21 @@
     <main>
         <div class="home">
             <div class="home-container">
-                <div class="background-photo"></div>
+                <img class="background-photo" src="photos/background-photo.jpg">
+                <img class="background-photo" src="photos/ales-nesetril-Im7lZjxeLhg-unsplash.jpg">
+                <img class="background-photo" src="photos/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg">
+                <div class="gallery-arrows">
+                    <div class="arrow-left" onclick="plusIndex(-1)">
+                        <span class="upper"></span><span class="lower"></span>
+                    </div>
+                    <div class="arrow-right" onclick="plusIndex(1)">
+                        <span class="upper"></span><span class="lower"></span>
+                    </div>
+                </div>
                 <div class="swipe-dots">
-                    <span class="swipe-dot"></span> <span class="swipe-dot"></span> <span class="swipe-dot"></span>
+                    <span class="swipe-dot white-dot" onclick="currentPhoto(1)"></span> 
+                    <span class="swipe-dot white-dot" onclick="currentPhoto(2)"></span> 
+                    <span class="swipe-dot white-dot" onclick="currentPhoto(3)"></span>
                 </div>
                 <div class="home-content">
                     <h1 class="home-header">Lorem Ipsum</h1>
@@ -153,9 +165,9 @@
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
-                                <p class="product-price">100.00</p>
+                                <p class="product-price">100.00</p><p class="currency">zł</p>
                             </div>
+                            <button class="cart-button">ADD TO CART</button>
                         </div>
                     </li>
                     <li class="new-products-element">
@@ -166,6 +178,7 @@
                             <div class="price-tag">
                                 <p class="product-price">100.00</p><p class="currency">zł</p>
                             </div>
+                            <button class="cart-button">ADD TO CART</button>
                         </div>
                     </li>
                     <li class="new-products-element">
@@ -174,9 +187,9 @@
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
-                                <p class="product-price">100.00</p>
+                                <p class="product-price">100.00</p><p class="currency">zł</p>
                             </div>
+                            <button class="cart-button">ADD TO CART</button>
                         </div>
                     </li>
                     <li class="new-products-element">
@@ -185,9 +198,9 @@
                         <div class="product-details">
                             <h2 class="product-name">Lorem Ipsum</h2>
                             <div class="price-tag">
-                                <button><img class="add-to-cart-icon" src="icons/shopping-cart-icon.png" width="20px" height="20px"></button>
-                                <p class="product-price">100.00</p>
+                                <p class="product-price">100.00</p><p class="currency">zł</p>
                             </div>
+                            <button class="cart-button">ADD TO CART</button>
                         </div>
                     </li>
                 </ul>
