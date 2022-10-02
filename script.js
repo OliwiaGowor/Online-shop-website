@@ -1,3 +1,20 @@
+//hamburger icon opening
+document.querySelector('.hamburger-icon-mobile').addEventListener('click', function() {
+	this.classList.toggle('open');
+	document.querySelector('.tabs').classList.toggle('open');
+	document.querySelector('.tabs').classList.toggle('mobile');
+});
+
+var navElements = document.querySelectorAll('.tabs-elements');
+for (i = 0; i < navElements.length; i++) {
+	navElements[i].addEventListener('click', function() {
+	document.querySelector('.hamburger-icon-mobile').classList.toggle('open');
+	document.querySelector('.tabs').classList.remove('open');
+	document.querySelector('.tabs').classList.remove('mobile');
+	});
+}
+
+//settings opening
 document.querySelector('.languages').addEventListener('click', function() {
 	this.classList.toggle('open');
 }); 
@@ -39,3 +56,14 @@ function currentPhoto(n) {
 	changePhoto(slideIndex = n);
 }
 
+//lower navbar changing on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".page-nav-lower").style.top = "58px";
+  } else {
+    document.querySelector(".page-nav-lower").style.top = "-59px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
