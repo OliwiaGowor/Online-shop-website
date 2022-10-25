@@ -1,0 +1,29 @@
+.categories-item {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 40px;
+}
+
+.categories-item a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.categories-item .categories-item__photo {
+}
+
+.categories-item a:hover .categories-item__photo {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+.categories-item .categories-item__name {
+  position: relative;
+  top: -164.5px;
+  color: var(--accent-color);
+  margin: 0px;
+  font-size: 34px;
+}
