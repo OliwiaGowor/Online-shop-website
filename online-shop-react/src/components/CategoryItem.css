@@ -27,3 +27,20 @@
   margin: 0px;
   font-size: 34px;
 }
+
+
+@media screen and (max-width: 1520px) and (min-width: 974px) {
+
+.categories-item {
+      margin: 30px 7%;   
+  }
+
+.categories-item:nth-of-type(even) {
+      margin-right: 12%;
+  }
+.categories-item:nth-of-type(odd) {
+      margin-left: 12%;
+  }
+
+
+}
