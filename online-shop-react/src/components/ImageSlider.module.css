@@ -1,0 +1,90 @@
+.image-slider .background-photo{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-size: 100% 800px;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+.image-slider__arrows span {
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    background-color: var(--primary-color-lighter);
+    position: relative;
+    z-index: 5;
+}
+
+.image-slider__arrows .arrow-left:hover span, .image-slider__arrows .arrow-right:hover span {
+    background-color: var(--accent-color);
+    transition: 0.2s;
+}
+
+.image-slider__arrows div {
+    display: inline-block;
+    width: fit-content;
+    position: absolute;
+    top: 450px;
+    z-index: 10;    
+    height: fit-content;
+    width: fit-content;
+    width: 30px;
+    height: 50px;
+}
+
+.image-slider__arrows .arrow-left {
+    left: 5%;
+    cursor: pointer;
+}
+
+.image-slider__arrows .arrow-left .upper {
+    transform: rotate(-45deg);
+    top: -1px;
+}
+
+.image-slider__arrows .arrow-left .lower {
+    transform: rotate(45deg);
+}
+
+.image-slider__arrows .arrow-right {  
+    right: 5%; 
+    cursor: pointer;
+}
+
+.image-slider__arrows .arrow-right .upper {
+    transform: rotate(45deg);
+    top: -1px;
+}
+
+.image-slider__arrows .arrow-right .lower {
+    transform: rotate(-45deg);
+}
+
+.image-slider__dots {
+    position: absolute;
+    top: 830px;
+    left: calc(50% - 31px);
+}
+
+.image-slider__dots .swipe-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    z-index: 10;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+.image-slider__dots .white-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color-lighter);
+    z-index: 10;
+    margin: 0px 4px;
+}

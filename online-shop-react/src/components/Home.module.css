@@ -1,0 +1,30 @@
+.home {
+    height: calc(800px + 59px + 42px);
+}
+
+.home .home__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    top: 200px;
+    width: 40%;
+    padding-left: 15%;
+}
+
+.home .home__content .home__header {
+    font-size: 68px;
+}
+
+.home .home__content .home__text {
+    font-size: 20px;
+}
+
+.home .home__content .home__button-shop {
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--accent-color);
+}

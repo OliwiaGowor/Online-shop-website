@@ -1,11 +1,12 @@
+import React from "react";
 import "./Qualities.css";
 import QualitiesItem from "./QualitiesItem";
 
 function Qualities() {
   return (
-    <div class="qualities">
-    <div class="qualities-container">
-        <div class="qualities-elements">
+    <div className="qualities">
+    <div className="qualities-container">
+        <div className="qualities-elements">
            <QualitiesItem />
            <QualitiesItem />
            <QualitiesItem />

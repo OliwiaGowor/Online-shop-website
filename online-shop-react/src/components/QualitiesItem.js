@@ -1,11 +1,12 @@
+import React from "react";
 import "./QualitiesItem.css";
 
 function QualitiesItem() {
     return (
-        <div class="qualities-item">
-            <div class="qualities-icon-container"><img class="qualities-icon" src="icons/truck-side.png" width="50px" height="50px" /></div>
-            <h2 class="qualities-header">Shipping</h2>
-            <p class="qualities-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="qualities-item">
+            <div className="qualities-icon-container"><img className="qualities-icon" src="icons/truck-side.png" width="50px" height="50px" /></div>
+            <h2 className="qualities-header">Shipping</h2>
+            <p className="qualities-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     );
 }

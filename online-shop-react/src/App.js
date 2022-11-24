@@ -1,3 +1,4 @@
+import React from 'react';
 import "./App.css";
 import Categories from "./components/Categories";
 import NewProducts from "./components/NewProducts";
@@ -14,11 +15,12 @@ function App() {
       <PageNavLower />
       <Home />
       <Qualities />
-      <NewProducts />
       <Categories />
+      <NewProducts />
       <Footer />
     </div>
   );
 }
 
 export default App;
+  

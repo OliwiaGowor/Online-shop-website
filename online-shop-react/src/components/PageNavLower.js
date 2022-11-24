@@ -1,3 +1,4 @@
+import React from "react";
 import "./PageNavLower.css";
 
 function PageNavLower() {
@@ -14,48 +15,51 @@ function PageNavLower() {
         prevScrollpos = currentScrollPos;
     };
 
-
-    document.querySelector(".hamburger-icon-mobile").addEventListener("click", function () {
+    function hamburgerClickHandler() {
+        document.querySelector(".hamburger-icon-mobile").addEventListener("click", function () {
             this.classList.toggle("open");
             document.querySelector(".tabs").classList.toggle("open");
             document.querySelector(".tabs").classList.toggle("mobile");
         });
 
-    var navElements = document.querySelectorAll(".tabs-elements");
-    for (let i = 0; i < navElements.length; i++) {
-        navElements[i].addEventListener("click", function () {
-            document.querySelector(".hamburger-icon-mobile").classList.toggle("open");
-            document.querySelector(".tabs").classList.remove("open");
-            document.querySelector(".tabs").classList.remove("mobile");
+        var navElements = document.querySelectorAll(".tabs-elements");
+        for (let i = 0; i < navElements.length; i++) {
+            navElements[i].addEventListener("click", function () {
+                document.querySelector(".hamburger-icon-mobile").classList.toggle("open");
+                document.querySelector(".tabs").classList.remove("open");
+                document.querySelector(".tabs").classList.remove("mobile");
+            });
+        }
+    }
+
+    function languagesClickHandler() {
+        document.querySelector(".languages").addEventListener("click", function () {
+            this.classList.toggle("open");
         });
     }
 
-
-    document.querySelector(".languages").addEventListener("click", function () {
-        this.classList.toggle("open");
-    });
-
-    document.querySelector(".currency").addEventListener("click", function () {
-        this.classList.toggle("open");
-    });
-
+    function currencyClickHandler() {
+        document.querySelector(".currency").addEventListener("click", function () {
+            this.classList.toggle("open");
+        });
+    }
 
     return (
-        <div class="page-nav-lower">
-            <div class="hamburger-icon-mobile">
-                <span class="hamburger-icon-mobile-element"></span>
-                <span class="hamburger-icon-mobile-element"></span>
-                <span class="hamburger-icon-mobile-element"></span>
-                <span class="hamburger-icon-mobile-element"></span>
-                <span class="hamburger-icon-mobile-element"></span>
-                <span class="hamburger-icon-mobile-element"></span>
+        <div className="page-nav-lower">
+            <div className="hamburger-icon-mobile" onClick="hamburgerClickHandler()">
+                <span className="hamburger-icon-mobile-element"></span>
+                <span className="hamburger-icon-mobile-element"></span>
+                <span className="hamburger-icon-mobile-element"></span>
+                <span className="hamburger-icon-mobile-element"></span>
+                <span className="hamburger-icon-mobile-element"></span>
+                <span className="hamburger-icon-mobile-element"></span>
             </div>
-            <div class="tabs">
-                <ul class="tabs-elements">
-                    <li class="shop-nav">
+            <div className="tabs">
+                <ul className="tabs-elements">
+                    <li className="shop-nav">
                         <a href="">Shop</a>
-                        <div class="dropdown-arrow"></div>
-                        <div class="shop-dropdown">
+                        <div className="dropdown-arrow"></div>
+                        <div className="shop-dropdown">
                             <ul>
                                 <li><a href="">Lorem ipsum</a></li>
                                 <li><a href="">Lorem ipsum</a></li>
@@ -70,26 +74,26 @@ function PageNavLower() {
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <span class="nav-lower-space"></span>
-            <div class="settings">
-                <ul class="settings-elements">
-                    <li class="languages">
+            <span className="nav-lower-space"></span>
+            <div className="settings">
+                <ul className="settings-elements">
+                    <li className="languages" onClick="languagesClickHandler">
                         <p>PL</p>
-                        <div class="dropdown-arrow">
+                        <div className="dropdown-arrow">
                             <span></span><span></span>
                         </div>
-                        <div class="languages-dropdown">
+                        <div className="languages-dropdown">
                             <ul>
                                 <li>ENG</li>
                             </ul>
                         </div>
                     </li>
-                    <li class="currency">
+                    <li className="currency" onClick="currencyClickHandler">
                         <p>PLN</p>
-                        <div class="dropdown-arrow">
+                        <div className="dropdown-arrow">
                             <span></span><span></span>
                         </div>
-                        <div class="currency-dropdown">
+                        <div className="currency-dropdown">
                             <ul>
                                 <li>EUR</li>
                             </ul>

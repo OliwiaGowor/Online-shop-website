@@ -1,3 +1,4 @@
+import React from 'react';
 import "./NewProducts.css";
 import ProductItem from "./ProductItem";
 
